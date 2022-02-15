@@ -1,6 +1,10 @@
 <h1>KelloggCoin Ledger</h1>
 
 <!-- Step 1: List all transaction, starting with the ICO -->
+<% for trx in Transactions.transaction %>
+    <li><%= trx.from_user%><li>
+<%end%>
+    
 
 <!-- Step 2: Calculate and display the balances -->
 
